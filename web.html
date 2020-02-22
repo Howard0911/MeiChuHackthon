@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MeiChu-Parking</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+	background-color: #666;
+	padding: 3px;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+	float: left;
+	width: 30%;
+	height: 450px; /* only for demonstration, should be removed */
+	background: #ccc;
+	padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+article {
+	float: left;
+	padding: 20px;
+	width: 70%;
+	background-color: #FFFAFA;
+	height: 450px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Style the footer */
+footer {
+	background-color: #777;
+	padding: 10px;
+	text-align: center;
+	color: white;
+	
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+	nav, article {
+		width: 100%;
+		height: auto;
+	}
+}
+#rectangle{
+    width:75px;
+    height:150px;
+    background:LawnGreen;
+	float:left;
+	border: 6px solid #FFFAFA;
+}
+</style>
+</head>
+<body>
+
+<header>
+	<h2>MeiChu-Parking APP</h2>
+</header>
+
+<section>
+	<nav>
+		<table>
+			<tr>
+				<td width="300" height="20"><button><font face="微軟正黑體" size="3">停車狀況分析</font></button></td>
+			</tr>
+			<tr>
+				<td width="300" height="20"><button><font face="微軟正黑體" size="3">停車場所</font></button></td>
+			</tr>
+			<tr>
+				<td width="300" height="20" padding="20"><font face="微軟正黑體" size="3">樓層
+					<ul>
+						<li><button><font face="微軟正黑體" size="3">1樓</font></button></li>
+						<li><button><font face="微軟正黑體" size="3">2樓</font></button></li>
+						<li><button><font face="微軟正黑體" size="3">3樓</font></button></li>
+						<li><button><font face="微軟正黑體" size="3">4樓</font></button></li>
+						<li><button><font face="微軟正黑體" size="3">5樓</font></button></li>
+					</ul>
+				</font></td>
+			</tr>
+			<tr>
+				<td width="300" height="20"><button><font face="微軟正黑體" size="3">管理中心</font></button></td>
+			</tr>
+		</table>
+	</nav>
+  
+	<article>
+		<h1><font face="微軟正黑體">梅竹黑客松停車場即時資訊</font></h1>
+		<div id="rectangle"></div><div id="rectangle"></div><div id="rectangle"></div>
+		<div id="rectangle"></div><div id="rectangle"></div>
+		<p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+		<p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+	</article>
+</section>
+
+<footer>
+	<p>Footer</p>
+</footer>
+
+</body>
+</html>

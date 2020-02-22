@@ -1,0 +1,12 @@
+name: wifi_position
+dependencies:
+  - python=3.6
+  - numpy
+  - matplotlib
+  - tensorflow-gpu
+  - keras
+  - pylint
+  - autopep8
+  - comtypes
+  - pip:
+    - pywifi
